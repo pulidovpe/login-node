@@ -34,7 +34,7 @@ app.use(bodyParser.urlencoded({extended: false})); //false->sin imagenes.
 
 // required for passport
 app.use(session({
-	secret: 'faztwebtutorialexample',
+	secret: 'asdfjkl0987qwer5432poiu',
 	resave: false,
 	saveUninitialized: false
 }));
