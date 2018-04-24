@@ -319,7 +319,7 @@ module.exports = function(passport) {
         clientSecret    : configAuth.googleAuth.clientSecret,
         callbackURL     : configAuth.googleAuth.callbackURL,
         //passReqToCallback : true // allows us to pass in the req from our route (lets us check if a user is logged in or not)
-        proxy:          : true
+        proxy           : true
     },
     function(req, token, refreshToken, profile, done) {
 
