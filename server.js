@@ -47,6 +47,7 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 require('./app/routes.js')(app, passport); 
 
 // static files
+app.use('/modules',express.static(path.join(__dirname, 'node_modules')))
 app.use(express.static(path.join(__dirname, 'public')));
 
 // launch ======================================================================

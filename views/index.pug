@@ -3,26 +3,26 @@ html(lang="es")
 	head
 		title Autentificación Node usando Passport
 		meta(charset="utf-8")
+		//- link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous")
+		link(href="/modules/bootstrap/dist/css/bootstrap.min.css",rel="stylesheet")
+		link(href="/modules/@fortawesome/web-fonts-with-css/css/fontawesome-all.min.css",rel="stylesheet")
+		link(rel="stylesheet" href="/css/all.css" crossorigin="anonymous")
+		link(href="/css/styles.css",rel="stylesheet")
+		//- script(src="/modules/@fortawesome/fontawesome-free-brands/faFacebook.js")
 	body
 		div(class="container")
 			div(class="jumbotron text-center")
 				h1
-					span(class="fa fa-lock")
-					-Autentificación Node
-				p
-					Conectar o registrarse con:
+					i(class="fab fa-node") Autentificación Node usando Passport
+				p Conectar o registrarse con:
 				a(href="/login" class="btn btn-default")
-					span(class="fa fa-user")
-					-Conexión Local
+					i(class="fas fa-user") Conexión Local
+					//-span(class="fas fa-user") Conexión Local
 				a(href="/signup" class="btn btn-default")
-					span(class="fa fa-user")
-					-Registro Local
+					span(class="far fa-user") Registro Local
 				a(href="/auth/facebook" class="btn btn-primary")
-					span(class="fa fa-facebook")
-						-Facebook
+					span(class="fab fa-facebook") Facebook
 				a(href="/auth/twitter" class="btn btn-info")
-					span(class="fa fa-twitter")
-					-Twitter
+					span(class="fab fa-twitter-square") Twitter
 				a(href="/auth/google" class="btn btn-danger")
-					span(class="fa fa-google-plus")
-					-Google
+					span(class="fab fa-google-plus-square") Google
