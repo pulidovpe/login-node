@@ -1,28 +1,17 @@
-doctype html
-html(lang="es")
-	head
-		title Autentificación Node usando Passport
-		meta(charset="utf-8")
-		//- link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous")
-		link(href="/modules/bootstrap/dist/css/bootstrap.min.css",rel="stylesheet")
-		link(href="/modules/@fortawesome/web-fonts-with-css/css/fontawesome-all.min.css",rel="stylesheet")
-		link(rel="stylesheet" href="/css/all.css" crossorigin="anonymous")
-		link(href="/css/styles.css",rel="stylesheet")
-		//- script(src="/modules/@fortawesome/fontawesome-free-brands/faFacebook.js")
-	body
-		div(class="container")
-			div(class="jumbotron text-center")
-				h1
-					i(class="fab fa-node") Autentificación Node usando Passport
-				p Conectar o registrarse con:
-				a(href="/login" class="btn btn-default")
-					i(class="fas fa-user") Conexión Local
-					//-span(class="fas fa-user") Conexión Local
-				a(href="/signup" class="btn btn-default")
-					span(class="far fa-user") Registro Local
-				a(href="/auth/facebook" class="btn btn-primary")
-					span(class="fab fa-facebook") Facebook
-				a(href="/auth/twitter" class="btn btn-info")
-					span(class="fab fa-twitter-square") Twitter
-				a(href="/auth/google" class="btn btn-danger")
-					span(class="fab fa-google-plus-square") Google
+extends layout
+block content
+	div.container
+		div.well.top-space.large-padding.text-center
+			h1 Autentificación 
+				span.fab.fa-node  usando Passport
+			p Conectar o registrarse con:
+			a.btn.btn-default(href='/login')
+				span.far.fa-user Conectar
+			a.btn.btn-default(href="/signup")
+				span(class="far fa-user") Registrarse
+			a.btn.btn-primary(href="/auth/facebook")
+				span.fab.fa-facebook Facebook
+			a.btn.btn-info(href="/auth/twitter")
+				span.fab.fa-twitter-square Twitter
+			a.btn.btn-danger(href="/auth/google")
+				span.fab.fa-google-plus-square Google

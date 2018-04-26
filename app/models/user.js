@@ -12,14 +12,14 @@ var userSchema = mongoose.Schema({
 	local 			: {
 		email 		: {
 			type		: String,
-			required : "El correo es obligatorio",
+			required : [true, "El correo es obligatorio"],
 			unique	: true,
 			match 	: email_match
 		},
 		password 	: {
 			type		: String,
 			required : true,
-			maxlength: [30,"Password muy grande"],
+			/*maxlength: [30,"Password muy grande"],*/
 			minlength: [6,"Password muy corto"]
 		},
 	},

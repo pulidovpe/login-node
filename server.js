@@ -16,8 +16,16 @@ const session = require('express-session');
 const configDB = require('./config/database.js');
 
 // configuramos ===============================================================
-mongoose.connect(configDB.url, { // connect to our database
+// Utilizar las promesas de node
+mongoose.Promise = global.Promise;
+// connect to our database
+mongoose.connect(configDB.url, { 
 	useMongoClient: true
+});
+mongoose.connection.on('error', (err) => {
+	throw err;
+	process.exit(1);
+	// En caso de error, detener
 });
 require('./config/passport')(passport); // pass passport for configuration
 
