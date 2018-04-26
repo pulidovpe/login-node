@@ -59,3 +59,5 @@ typings/
 
 # credentials
 auth.js*
+server_crt.pem
+server_key.pem

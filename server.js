@@ -4,6 +4,9 @@
 const express = require('express');
 const app = express();
 
+const fs = require('fs');
+const https = require('https');
+
 const path = require('path');
 const mongoose = require('mongoose');
 const passport = require('passport');
@@ -59,6 +62,13 @@ app.use('/modules',express.static(path.join(__dirname, 'node_modules')))
 app.use(express.static(path.join(__dirname, 'public')));
 
 // launch ======================================================================
-app.listen(app.get('port'), () => {
+/*app.listen(app.get('port'), () => {
 	console.log('Servidor corriendo en el puerto ', app.get('port'));
+});*/
+
+https.createServer({
+   key: fs.readFileSync('./config/server_key.pem'),
+   cert: fs.readFileSync('./config/server_crt.pem')
+}, app).listen(app.get('port'), () => {
+   console.log('Servidor Seguro corriendo en el puerto ', app.get('port'));
 });
