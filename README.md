@@ -15,10 +15,10 @@
 <blockquote>
 <p>Práctica de Node.Js usando Passport para conectar.</p>
 </blockquote>
-<p><a href="https://npmjs.org/package/datadog-metrics" rel="nofollow"><img src="https://camo.githubusercontent.com/5f764b15a5a631771a214a086b0da2799b1c8327/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f64617461646f672d6d6574726963732e7376673f7374796c653d666c61742d737175617265" alt="NPM Version" data-canonical-src="https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square" style="max-width:100%;"></a>
+<!-- <p><a href="https://npmjs.org/package/datadog-metrics" rel="nofollow"><img src="https://camo.githubusercontent.com/5f764b15a5a631771a214a086b0da2799b1c8327/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f64617461646f672d6d6574726963732e7376673f7374796c653d666c61742d737175617265" alt="NPM Version" data-canonical-src="https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square" style="max-width:100%;"></a>
 <a href="https://travis-ci.org/dbader/node-datadog-metrics" rel="nofollow"><img src="https://camo.githubusercontent.com/e14fac8021872d240bf8baf6c136a5ae3c84b589/68747470733a2f2f696d672e736869656c64732e696f2f7472617669732f6462616465722f6e6f64652d64617461646f672d6d6574726963732f6d61737465722e7376673f7374796c653d666c61742d737175617265" alt="Build Status" data-canonical-src="https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square" style="max-width:100%;"></a>
 <a href="https://npmjs.org/package/datadog-metrics" rel="nofollow"><img src="https://camo.githubusercontent.com/6b23c710537e328ef22ba09b126775f6cb8bf730/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f646d2f64617461646f672d6d6574726963732e7376673f7374796c653d666c61742d737175617265" alt="Downloads Stats" data-canonical-src="https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square" style="max-width:100%;"></a></p>
-<p><a target="_blank" href="/dbader/readme-template/blob/master/header.png"><img src="/dbader/readme-template/raw/master/header.png" alt="" style="max-width:100%;"></a></p>
+<p><a target="_blank" href="/dbader/readme-template/blob/master/header.png"><img src="/dbader/readme-template/raw/master/header.png" alt="" style="max-width:100%;"></a></p> -->
 
 ![login-node](https://lh3.googleusercontent.com/m7MgU95rti9rCoFJgBseNqK6alKPNGIAx9IhCnX1rJOO_rVpvCnMQZEUc8vq4MgR6ZMaiU2V2mLW "Login-node")
 
