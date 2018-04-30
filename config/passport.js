@@ -2,7 +2,7 @@
 
 // load all the things we need
 const LocalStrategy = require('passport-local').Strategy;
-const FacebookStrategy = require('passport-facebook').Strategy;
+const FacebookStrategy = require('passport-facebook-rwky').Strategy;
 const TwitterStrategy  = require('passport-twitter').Strategy;
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
@@ -135,6 +135,7 @@ module.exports = function(passport) {
 	},
 
 	// facebook will send back the token and profile
+	//function(accessToken, refreshToken, profile, cb) {
 	function(req, token, refreshToken, profile, done) {
 
 		// asynchronous
@@ -173,6 +174,7 @@ module.exports = function(passport) {
 						if (!user.facebook.token) {
 							user.facebook.token = token;
 							user.facebook.name  = profile.name.givenName + ' ' + profile.name.familyName;
+							//user.facebook.name  = profile.name.first_name + ' ' + profile.name.last_name;
 							user.facebook.email = profile.emails[0].value;
 
 							user.save(function(err) {
@@ -195,8 +197,8 @@ module.exports = function(passport) {
 
 						// set the user's local credentials
 						console.log(`Token: ${newUser.facebook.token}`);
-						newUser.local.email    = "noemail@email.com";
-						newUser.local.password = newUser.generateHash("sinclave");
+						newUser.local.email    = profile.emails[0].value;
+						newUser.local.password = "sinclave";
 						// save our user to the database
 						newUser.save(function(err) {
 							if (err)
