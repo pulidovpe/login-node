@@ -3,7 +3,7 @@
 > Proyecto desarrollado únicamente con fines didácticos.
 
 ## Screenshots / Capturas de Pantalla
-![Login-Node](https://lh3.googleusercontent.com/m7MgU95rti9rCoFJgBseNqK6alKPNGIAx9IhCnX1rJOO_rVpvCnMQZEUc8vq4MgR6ZMaiU2V2mLW)
+![Login-Node](https://lh3.googleusercontent.com/m7MgU95rti9rCoFJgBseNqK6alKPNGIAx9IhCnX1rJOO_rVpvCnMQZEUc8vq4MgR6ZMaiU2V2mLW=s800 "Login-Node")
 
 ## Tech-framework used / Tecnologías Usadas
 - Node
